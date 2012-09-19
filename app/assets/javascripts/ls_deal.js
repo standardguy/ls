@@ -21,7 +21,6 @@ $(function(){
  
   $("input#deal_email").focus()	
 
-
 	 
 	// enable the button after a successful send
 	var enable_btn = function(){
