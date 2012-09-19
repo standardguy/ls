@@ -1,0 +1,37 @@
+      <% title("Deal Page") %>
+
+        <ul class="nav nav-tabs" role="navigation">
+          <li class="active">
+            <a href="#" data-target="#tab1" data-toggle="tab">sign up</a>
+          </li>
+          <li>
+            <a href="/how_it_works" class="remote" data-target="#tab2" data-toggle="tab" target="new">how it works</a>
+          </li>
+          <li>
+            <a href="/about" class="remote" data-target="#tab3" data-toggle="tab" target="new">about us</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="tab1">
+            <hgroup>
+              <h2 class="location">wilmington</h2>
+              <h3 class="deal_type">one day deals</h3>
+            </hgroup>
+            <%= render 'form' %>
+          </div>
+          <div class="tab-pane" id="tab2"></div>
+          <div class="tab-pane" id="tab3"></div>
+        </div>
+ 
+
+      <% content_for :modal do %>
+        <!-- Modal -->
+        <div id="gen_modal" class="modal hide fade">
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+          </div>
+        </div> 
+      <% end %> 
+
+

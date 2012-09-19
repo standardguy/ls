@@ -1,0 +1,23 @@
+<%= form_for @deal do |f| %>
+  <div class="wrapper">
+    <%= f.label :email, "enter your email address" %>
+    <%= f.email_field :email, :required => "required" %>
+    <p class="instruction">By suscribing, I agree to the <a href="/terms#content" data-target="#gen_modal" data-toggle="modal" target="new">terms and conditions</a> and <a href="/privacy#content" data-target="#gen_modal" data-toggle="modal" target="new">privacy policy</a>.</p>
+  </div>
+  <%= f.submit "sign up", :class=> "pull-right btn-large btn-info" %>
+
+
+  <% if notice %>
+    <p class="flash alert alert-success alert-block" data-flash="success" style="display:block;">
+      <%= notice %>
+    </p>  
+  <% end %>
+ 
+  <% if @deal.errors.any? %> 
+    <p class="alert alert-error alert-block" data-flash="error" style="display:block;">
+      <% @deal.errors.full_messages.each do |msg| %>
+          <%= msg %>
+      <% end %>
+    </p>
+  <% end %>  
+<% end %>   

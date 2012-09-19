@@ -1,0 +1,22 @@
+<div class="show">
+<% title("Deals List Page") %>
+<h2>Deals List</h2>
+
+<table class="table table-striped table-hover">
+  <tr>
+    <th>Email</th>
+    <th></th>
+  </tr>
+
+<% @deals.each do |deal| %>
+  <tr>
+    <td><%= deal.email %></td>
+    <td><%= link_to 'Destroy', deal, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Deal', root_path %>
+</div>

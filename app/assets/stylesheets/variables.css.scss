@@ -1,0 +1,44 @@
+// BG 
+$body-bg:#000;
+$content-bg:#fff;
+$tab-bg-active:#09b1da;
+$header-bg:#262626;
+$nav-bg:#454545;
+$form-bg:#e6e6e6;
+
+// Font Color 
+$text-color:#454545;
+$link-color:#5FB8DD;
+$tab-text-color:#5FB8DD;
+$tab-text-color-active:#fff;
+$tab-text-color-hover:#eee;
+$hn-text-color:#262626;
+$location-text-color:#909090;
+$input-text-color:#888;
+$instruction-text-color:#888;
+
+// Border 
+$tab-border-top:#84dcf1;
+$tab-border-bottom:#b2b2b2;
+$form-border:#e3e3e3;
+$form-border-bottom:#a5a5a5;
+
+// Shadow 
+$input-shadow:#999;
+
+
+// Mixins
+$default_rounded_amount: 5px;
+// Round all corners by amount
+@mixin round-corners($amount: $default_rounded_amount){
+  border-radius: $amount;
+  -moz-border-radius: $amount;
+  -webkit-border-radius: $amount;
+ }
+
+$default_shadow_amount: 0 1px 1px;
+@mixin border-shadow($amount: $default_shadow_amount){
+	-webkit-box-shadow: $amount $input-shadow inset; 
+	-moz-box-shadow: $amount $input-shadow inset; 
+	box-shadow: $amount $input-shadow inset;
+}
