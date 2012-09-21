@@ -1,1 +1,6 @@
 This is the Ruby on Rails based version of the ls challenge.
+
+Email is submitting to a Postgres database.  You can delete email fromt he DB by going to the "How it Works" tab and clicking on the "link to manage the deals".
+
+Enjoy
+R
