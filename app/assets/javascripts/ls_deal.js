@@ -21,6 +21,7 @@ $(function(){
  
   $("input#deal_email").focus()	
 
+  
 	 
 	// enable the button after a successful send
 	var enable_btn = function(){
@@ -73,6 +74,12 @@ $(function(){
   },'a.remote[data-toggle="tab"]')
 
   
+ $("ul.nav").on({
+ 	click: function(){
+ 		$("ul.nav").removeAttr("id")
+ 	}
+ }, "li")
+
 	// load up the terms and privacy data
 	$("form").on({
 		click:function(){

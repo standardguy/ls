@@ -4,6 +4,8 @@ module ApplicationHelper
     content_for(:title) { " - #{page_title}" }
   end
 
-
+  def current_nav(nav)
+    content_for(:nav) { nav }
+  end
 
 end

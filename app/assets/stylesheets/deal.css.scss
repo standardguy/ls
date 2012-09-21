@@ -429,6 +429,11 @@ header {
 }
 
 .nav-tabs {
+	&#deal li.deal,   // non js display
+	&#works li.works, // non js display
+	&#about li.about{ // non js display
+    @extend .active
+	}
 	li {
 		margin-top:-1px;
 		a { 
@@ -439,7 +444,7 @@ header {
 			  color: $tab-text-color-hover;
 			}
 		}
-		&.active { 
+		&.active{ 
 			position: relative; 
 			&:before {    // caret for active tab    
 				-moz-box-orient: vertical;

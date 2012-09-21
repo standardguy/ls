@@ -18,9 +18,21 @@
       <section class="container" role="region">
         <header>
           <h1 id="logo">Living Social</h1>
-        </header>      
-      <%= yield %>
-        </section> 
+        </header>    
+        <ul class="nav nav-tabs <%= 'hide' if yield(:nav) == 'list' %>" id="<%= yield :nav %>" role="navigation">
+          <li class="deal" >
+            <a href="/" data-target="#tab1" data-toggle="tab">sign up</a>
+          </li>
+          <li class="works">
+            <a href="/how_it_works" class="remote" data-target="#tab2" data-toggle="tab">how it works</a>
+          </li>
+          <li class="about">
+            <a href="/about" class="remote" data-target="#tab3" data-toggle="tab">about us</a>
+          </li>
+        </ul> 
+
+        <%= yield %>
+      </section> 
     </div>
 
     <%= yield :modal %>
