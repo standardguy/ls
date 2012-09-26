@@ -375,7 +375,7 @@ body{
 	min-width: 700px;
   &.ie{     // hackery!!
 	  #background {
-		  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='deal_bkgd.jpg', sizingMethod='scale');
+		  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/deal_bkgd.jpg', sizingMethod='scale');
 	  }
     input#deal_email {
   	  line-height:25px;
